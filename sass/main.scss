@@ -1,0 +1,106 @@
+@import 'color';
+@import "images";
+@import 'mixin';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container {
+    height: 620px;
+    width: auto;
+    background: url("../images/Landscape.jpg");
+    @include content1;
+    flex-direction: column;
+}
+#header {
+    width: auto;
+    height: 100px;
+    border: 1px solid black;
+    background-color: $headreColor;
+    flex-direction: row;
+    @include content1
+}
+#navBar {
+    display: flex;
+    flex-direction: row;
+}
+#navBar li {
+    float: left;
+    list-style: none;
+    margin-top: 60px;
+}
+#navBar li a {
+    padding: 10px 10px;
+    text-decoration: none;
+    color: black;
+    font-family: Helvetica;
+    font-weight: bold;
+}
+#footer {
+    width: auto;
+    height: 70px;
+    border: 1px solid black;
+    background-color: $footerColor;
+    @include content1
+}
+#logo {
+    width: 200px;
+    height: 70px;
+    margin: 12px 12px;
+}
+#signOut input {
+    margin: 50px 10px;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+#signOut button {
+    margin-right: 100px;
+    padding: 4px;
+    border-radius: 7px;
+}
+
+#contact {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+footer img {
+    height: 40px;
+    width: 40px;
+    margin: 12px 18px;
+}
+
+footer p {
+    margin: 18px 20px;
+    font-size: 25px;
+}
+
+#text {
+    margin: 18px 10px;
+}
+
+#section input {
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    width: 300px;
+    height: 41px;
+    border-radius: 25px
+}
+#section button {
+    position: absolute;
+    top: 153px;
+    left: 355px;
+    padding: 8px 15px;
+    border-radius: 10px
+}
+.sectionHeading{
+position: fixed;
+top: 100px;
+left: 50px;
+color: rgb(240, 28, 9);
+}
